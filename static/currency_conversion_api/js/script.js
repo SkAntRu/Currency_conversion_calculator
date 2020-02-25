@@ -1,8 +1,9 @@
 $(document).ready(function () {
     $('input[name="source_currency"], input[name="final_currency"], #source_amount').on('change', function () {
         // let _url = 'http://127.0.0.1:8000/api/v1/currency_conversion/convert_currencies/EUR:9.99-PLN'
+        // https://currency-conversion-calculator.herokuapp.com/
         let _url = 'http://127.0.0.1:8000/api/v1/currency_conversion/convert_currencies/'
-		let source_currency = ''
+        let source_currency = ''
         let final_currency = ''
         let source_amount = ''
         $('input[name="source_currency"]:checked').each(function () {

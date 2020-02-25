@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 SECRET_KEY = '5c2f6s5ws0cw!847v_ufss@zgdd#le61*%&v-@2ib%adz8_&rh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0',
                  'localhost',
@@ -181,3 +181,20 @@ CELERY_BEAT_SCHEDULE = {
         'args': (url,),
     },
 }
+<<<<<<< .mine
+
+
+
+
+
+
+
+=======
+
+# HEROKU SETTINGS
+# django_heroku.settings(locals())
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# import dj_database_url
+# prod_db  =  dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(prod_db)
+>>>>>>> .theirs
