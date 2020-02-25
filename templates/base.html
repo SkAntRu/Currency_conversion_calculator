@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Тест base html {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href=" {% static 'currency_conversion_api/css/style.css' %}"/>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="{% static 'currency_conversion_api/js/script.js' %}"></script>
+</head>
+<body>
+{% block currency_conversion_calculator %}Тест base html {% endblock %}
+</body>
+</html>

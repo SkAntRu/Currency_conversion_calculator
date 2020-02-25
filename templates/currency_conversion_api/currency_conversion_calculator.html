@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}CCC Currency conversion Calculator CCC{% endblock %}
+
+{% block currency_conversion_calculator %}
+    <div class="currency_conversion_calculator">
+        <div id="container">
+            <div class="inline_blocks">
+                <form action="#">
+                    <p>
+                        <label>
+                            <input name="source_currency" type="radio" checked="checked"/>
+                            <span>USD</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="source_currency" type="radio"/>
+                            <span>EUR</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="source_currency" type="radio"/>
+                            <span>CZK</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="source_currency" type="radio"/>
+                            <span>PLN</span>
+                        </label>
+                    </p>
+                </form>
+            </div>
+            <div class="inline_blocks">
+                <input id="source_amount" type=number step=0.01 value=1>
+            </div>
+            <div class="conversion_char_div">
+                <div class="conversion_char">
+                    <span>=></span>
+                </div>
+            </div>
+            <div class="inline_blocks">
+                <form action="#">
+                    <p>
+                        <label>
+                            <input name="final_currency" type="radio" checked="checked"/>
+                            <span>USD</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="final_currency" type="radio"/>
+                            <span>EUR</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="final_currency" type="radio"/>
+                            <span>CZK</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="final_currency" type="radio"/>
+                            <span>PLN</span>
+                        </label>
+                    </p>
+                </form>
+            </div>
+            <div class="inline_blocks">
+                <div id="result">
+                    <output id="final_amount">1</output>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

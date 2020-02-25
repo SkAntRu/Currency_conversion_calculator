@@ -1,0 +1,76 @@
+body{
+    background-color: #878785; /* Цвет фона веб-страницы */
+    padding: 0px;
+    margin: 0px;
+   }
+.currency_conversion_calculator{
+    font-size: large;
+    margin: 10vh auto 0;
+    background-color: #f4f4ef;
+    border: 3px solid gray;
+    height: 170px;
+    width: 45vw;
+}
+.currency_conversion_calculator#container {
+    margin: 0;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+.inline_blocks {
+    margin: auto 0px;
+    position: relative;
+    padding: 0px;
+    width: 20%;
+    height: 170px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+}
+form{
+    margin: auto 0px;
+    height: 20px;
+    width: 90%;
+}
+#source_amount{
+    font-size: xx-large;
+    font-family: Arial;
+    height: 40px;
+    margin: 55px auto;
+    width: 96%;
+}
+.conversion_char_div{
+    margin: auto 0px;
+    position: relative;
+    padding: 0px;
+    height: 170px;
+    width: 12%;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+}
+.conversion_char{
+    position: absolute;
+    font-size: xx-large;
+    font-family: Arial;
+    alignment: left;
+    width: 100%;
+    height: 50px;
+    margin: 60px auto;
+    text-align: center;
+}
+#result{
+    position: absolute;
+    font-size: xx-large;
+    font-family: Arial;
+    alignment: left;
+    vertical-align: center;
+    width: 100%;
+    height: 170px;
+    margin: 60px auto;
+}
+.test_button{
+    height: 100px;
+    width: 100px;
+    margin: 0px 50%;
+}
