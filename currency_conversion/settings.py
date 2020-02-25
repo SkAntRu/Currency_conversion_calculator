@@ -177,8 +177,7 @@ CELERY_TIMEZONE = 'Europe/Moscow'
 CELERY_BEAT_SCHEDULE = {
     'get_currency_conversion': {
         'task': 'currency_conversion.apps.currency_conversion_api.tasks.get_today_cur_conversion',
-        # 'schedule': crontab(hour=0),
-        'schedule': crontab(minute='*/1'),  #
+        'schedule': crontab(hour=0),
         'args': (url,),
     },
 }
